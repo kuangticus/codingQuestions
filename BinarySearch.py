@@ -1,3 +1,6 @@
+#Time Complexity is O(logN) - We are starting using the half of the array that closet to number always
+#Space Complexity is O(1)
+
 def binarySearch(nums, target, left , right):
 
     while right >= left:
