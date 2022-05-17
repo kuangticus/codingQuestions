@@ -1,7 +1,5 @@
 # CodingQuestions
 
-Hello, This is compliation of Daily code challenges and Leetcode problems that I have worked on:
+Cheers! Following repo is conglomeration of interveiw prep and other random implementions
 
-Mainly for practice and upkeep: Coding is mostly in python. 
-
-Enjoy!
+Code is exclusively in python
