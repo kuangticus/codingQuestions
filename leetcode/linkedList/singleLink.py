@@ -6,6 +6,7 @@ Function:
     -display(): displays the current linked list O(N)
     -removeIndex(index): removes the specified index from list O(N)
     -getLength(): gets the length of linked list
+    -findEle(val): returns the index where val is at else -1 O(N)
 '''
 
 class node:
@@ -60,3 +61,12 @@ class singleLL:
             self.length -= 1  
     def getLength(self):
         return self.length          
+    def findEle(self, val)->int:
+        i = 0
+        temp = self.head
+        while temp:
+            if temp.val == val:
+                return i
+            temp = temp.next
+            i += 1 
+        return None

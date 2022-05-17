@@ -1,11 +1,12 @@
 '''
 Double linked list implemenation:
-    -addFront(val): adds value to front of list
-    -addBack(val): adds value to end of list
-    -removeIndex(index): removes specified index
+    -addFront(val): adds value to front of list O(1)
+    -addBack(val): adds value to end of list O(1)
+    -removeIndex(index): removes specified index O(N)
     -display(): prints the current list
     -removeIndex(index): removes things based on index
     -getLength(): gets the length of the list
+    -findEle(val): returns the index of element
 '''
 
 class node:
@@ -70,4 +71,13 @@ class doubleLink:
         while temp:
             print(temp.val, end=" ")
             temp = temp.prev    
-        print("")            
+        print("")   
+    def findEle(self, val)->int:
+        i = 0
+        temp = self.head
+        while temp:
+            if temp.val == val:
+                return i
+            temp = temp.next
+            i += 1 
+        return None
