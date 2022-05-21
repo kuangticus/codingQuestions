@@ -1,7 +1,7 @@
 '''
 Binary Tree class implementation:
 '''
-class BST:
+class BST():
     def __init__(self, data):
         self.data = data
         self.right = None
